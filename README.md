@@ -1,6 +1,6 @@
 # audio_processing
 
-Description goes here
+Group project for the course COMP.SGN.120-2023-2024-1 Introduction to Audio Processing
 
 ## Installation
 
