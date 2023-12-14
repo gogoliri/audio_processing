@@ -1,0 +1,10 @@
+librosa
+audiolazy
+scipy
+numpy
+matplotlib
+soundfile
+sounddevice
+tqdm
+torch
+torchsummary

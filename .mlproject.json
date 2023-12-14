@@ -1,0 +1,21 @@
+{
+  "project_name_raw": "audio_processing",
+  "project_name": "audio_processing",
+  "company": "Tampere University",
+  "authors": [
+    {
+      "name": "Khoa Pham Dinh",
+      "emails": [
+        "khoa.phamdinh@tuni.fi"
+      ]
+    },
+    {
+      "name": "Uyen Phan",
+      "emails": [
+        "uyen.phan@tuni.fi"
+      ]
+    }
+  ],
+  "license_title": "Proprietary License",
+  "year": "2023"
+}
