@@ -30,19 +30,19 @@ DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data')
 
 
 ### covert m4a to wav
-#def convert_m4a_to_wav(vehicle_type='tram'):
-#    data_dir = DATA_DIR
-#    vehicle_dir = os.path.join(data_dir, vehicle_type)
-#    file_list = os.listdir(vehicle_dir)
-#    print(vehicle_dir)
-#
-#    idx = 0
-#    for file in file_list:
-#        file_path = os.path.join(vehicle_dir, file)
-#        # Change the file name to "vehicle_type_%.03d.wav"
-#        new_file_path = os.path.join(vehicle_dir, vehicle_type + '_%.03d.wav' % idx)
-#        os.rename(file_path, new_file_path)
-#        idx += 1
+def convert_m4a_to_wav(vehicle_type='tram'):
+    data_dir = DATA_DIR
+    vehicle_dir = os.path.join(data_dir, vehicle_type)
+    file_list = os.listdir(vehicle_dir)
+    print(vehicle_dir)
+
+    idx = 0
+    for file in file_list:
+        file_path = os.path.join(vehicle_dir, file)
+        # Change the file name to "vehicle_type_%.03d.wav"
+        new_file_path = os.path.join(vehicle_dir, vehicle_type + '_%.03d.wav' % idx)
+        os.rename(file_path, new_file_path)
+        idx += 1
 
 def normalize_audio(file_path, output_path):
     # Load the audio file
@@ -91,8 +91,12 @@ def normalized_audios(audio_dir):
 if  __name__ == '__main__':
 
     # Genearte the normalized audios
-    normalized_audios(os.path.join(DATA_DIR, 'test_tram'))
-    normalized_audios(os.path.join(DATA_DIR, 'test_car'))
-    normalized_audios(os.path.join(DATA_DIR, 'train_tram'))
-    normalized_audios(os.path.join(DATA_DIR, 'train_car'))
+    #normalized_audios(os.path.join(DATA_DIR, 'test_tram'))
+    #normalized_audios(os.path.join(DATA_DIR, 'test_car'))
+    #normalized_audios(os.path.join(DATA_DIR, 'train_tram'))
+    #normalized_audios(os.path.join(DATA_DIR, 'train_car'))
 
+    convert_m4a_to_wav(vehicle_type='valid_tram')
+    convert_m4a_to_wav(vehicle_type='valid_car')
+    normalized_audios(os.path.join(DATA_DIR, 'valid_tram'))
+    normalized_audios(os.path.join(DATA_DIR, 'valid_car'))

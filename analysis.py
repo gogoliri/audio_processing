@@ -179,6 +179,14 @@ def feature_extraction(audio_file,
     # Read audio file
     y, sr = librosa.load(audio_file)
 
+    if is_plot:
+        # Plot signal
+        plt.figure(figsize=(14, 5))
+        librosa.display.waveshow(y, sr=sr, axis='time')
+        plt.xlabel('Time (seconds)')
+        plt.ylabel('Amplitude')
+        plt.title('Signal')
+        plt.show()
     # Extract features
     features = {}
     if is_energy:
