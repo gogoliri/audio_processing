@@ -154,6 +154,8 @@ def mfcc(y,
     if is_plot:
         plt.figure(figsize=(14, 5))
         librosa.display.specshow(mfcc, sr=sr, hop_length=hop_length, x_axis='time')
+        plt.xlabel('Time (seconds)')
+        plt.ylabel('MFCC coefficients')
         plt.colorbar(format='%+2.0f dB')
         plt.title('Mel-frequency cepstral coefficients')
         plt.show()
