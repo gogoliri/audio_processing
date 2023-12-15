@@ -24,17 +24,23 @@ After install the libraries, open the notebook and run the whole notebook
 
 Run the experiments in notebook "experiments.ipynb"
 
+It just take 30s to run the whole notebook with full dataset
+
+So we refer to submit the whole project
+
 ## File structure
 
-data folder: include the raw data and normalized data
+- data folder: include the raw data and normalized data, notebook calls for those folders
 
 analysis.py: the file contains functions to extract features such as energy, rms, zcr,
 
 log spectrogram, logmel spectrogram, constant Q transform, and MFCCs
 
-data.py: the file contains functions to normalized raw data and save to normalized_* folders
+notebook calls for this file
 
-experiments.ipynb: display histograms, plots and train neural network
+- data.py: the file contains functions to normalized raw data and save to normalized_* folders
+
+- experiments.ipynb: main notebook. display histograms, plots and train neural network
 
 COMPSGN120_Audio_Project.pdf: the report file of the project
 
