@@ -10,22 +10,13 @@ install libraries
 
 'pip install -r requirements.txt'
 
-since the data is too large for submission on moodle
-
-please download the zip files normalized_data.zip and raw_data.zip
-
-and extract their contains into a folder "data" in the main folder "audio_processing
-
-the image file_structure.png will show how should the folders be placed
 ## Usage
 
 generate normalized data
 
 'python3 data.py'
 
-This data.py file is just there to show how we generate normalized data
-
-We already generated the normalized data and include them in the folder "normalized_*"
+We already generated the normalized data in notebook and include them in the folder "normalized_*"
 
 After install the libraries, open the notebook and run the whole notebook
 
@@ -47,11 +38,11 @@ notebook calls for this file
 
 - data.py: the file contains functions to normalized raw data and save to normalized_* folders
 
-- experiments.ipynb: main notebook. display histograms, plots and train neural network
+notebook calls for this file
+
+- experiments.ipynb: main notebook. generate normalized data, display histograms, plot spectrograms and train neural network
 
 - COMPSGN120_Audio_Project.pdf: the report file of the project
-
-- file_structure: for the grader, how should the data folders be structured
 
 - README.md: instruction file. 
 
