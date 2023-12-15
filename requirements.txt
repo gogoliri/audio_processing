@@ -1,10 +1,12 @@
-librosa
-audiolazy
-scipy
 numpy
 matplotlib
-soundfile
+scipy
 sounddevice
-tqdm
+soundfile
+librosa
+audiolazy
 torch
 torchsummary
+tqdm
+scikit-learn
+
