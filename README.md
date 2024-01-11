@@ -2,6 +2,8 @@
 
 Group project for the course COMP.SGN.120-2023-2024-1 Introduction to Audio Processing
 
+Audio binary classification using 1D convolution neural network (1D-CNN)
+
 ## Installation
 
 Instruction for installing dependencies goes here
